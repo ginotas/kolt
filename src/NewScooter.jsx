@@ -79,7 +79,7 @@ export function NewScooter({ addPaspirtukas }) {
           value={is_busy}
           onChange={(e) => control(e, "is_busy")}
         />
-        <small className="small">irasyti 1 jei uzimtas, 0 jei laisvas</small>
+        <small className="small">padaryti checkbox (nespejau)</small>
       </div>
       <button className="buttonForm" onClick={insert}>
         Prideti paspirtuka
