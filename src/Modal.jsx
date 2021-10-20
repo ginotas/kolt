@@ -84,12 +84,12 @@ export function Modal({ id, scooter, editPaspirtukas, hideModal }) {
       <div>
         <label className="label">Ar uzimtas: </label>
         <input
-          type="number"
+          type="checkbox"
           onChange={(e) => control(e, "is_busy")}
           value={is_busy}
           onChange={(e) => control(e, "is_busy")}
         />
-        <small className="small">irasyti 1 jei uzimtas, 0 jei laisvas</small>
+        <small className="small">pazymeti jei uzimtas</small>
       </div>
       <button className="buttonForm" onClick={edit}>
         Redaguoti paspirtuka

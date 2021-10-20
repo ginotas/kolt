@@ -80,11 +80,28 @@ function App() {
     setScooters(scootersCopy);
   };
 
+  const sortDate = by => {
+    const scootersCopy = scooters.slice();
+    if ('last_use_time' === by) {
+      scootersCopy.sort((a, b) => {
+        if (a.last_use_time > b.last_use_time) {
+          return 1;
+        }
+        if (a.last_use_time < b.last_use_time) {
+          return -1;
+        }
+        return 0;
+      });
+    }
+    setScooters(scootersCopy);
+  } 
+
   return (
     <>
       <div className="App">
         <Header
           sort={sort}
+          sortDate={sortDate}
           scooterCount={scooterCount}
           scooterKm={scooterKm}
         ></Header>

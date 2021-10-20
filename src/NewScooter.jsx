@@ -74,12 +74,12 @@ export function NewScooter({ addPaspirtukas }) {
       <div>
         <label className="label">Ar uzimtas: </label>
         <input
-          type="number"
+          type="checkbox"
           onChange={(e) => control(e, "is_busy")}
           value={is_busy}
           onChange={(e) => control(e, "is_busy")}
         />
-        <small className="small">padaryti checkbox (nespejau)</small>
+        <small className="small">Pazymeti jei uzimtas</small>
       </div>
       <button className="buttonForm" onClick={insert}>
         Prideti paspirtuka

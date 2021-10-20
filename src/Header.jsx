@@ -1,4 +1,4 @@
-export function Header({ sort, scooterCount, scooterKm }) {
+export function Header({ sort, scooterCount, scooterKm, sortDate }) {
   return (
     <div>
       <h1>KOLT PASPIRTUKAI</h1>
@@ -10,7 +10,7 @@ export function Header({ sort, scooterCount, scooterKm }) {
       >
         Rusiuoti pagal km
       </button>
-      <button className="buttonHeader" onClick={() => sort("last_use_time")}>
+      <button className="buttonHeader" onClick={() => sortDate("last_use_time")}>
         Rusiuoti pagal naudojimo data
       </button>
     </div>
